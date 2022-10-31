@@ -15,14 +15,11 @@ type Qrcode struct {
 // http://127.0.0.1:8001/qrcode/1692528
 func GetQrCode(ctx *fiber.Ctx) error {
 	uid := ctx.Params("uid")
-	fmt.Println("uid=", uid)
 	url_str := ""
 	if uid == "" {
 		return ctx.Status(fiber.StatusOK).JSON(kit.FailAndMsg("Parameter error."))
 	} else {
 		url_str = fmt.Sprintf(global.BaseUrl, uid)
-		fmt.Println(global.BaseUrl)
-		fmt.Println(global.BaseUrl)
 	}
 	url := ctx.FormValue("url", url_str)
 	var png []byte
