@@ -8,4 +8,4 @@ application:
   qrcodeSize: 256   
 ```
 ## examples
-![demo] (/doc/qrcode-demo.png)
+![demo](/doc/qrcode-demo.png)
