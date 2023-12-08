@@ -12,7 +12,7 @@ import (
 type Qrcode struct {
 }
 
-// http://127.0.0.1:8001/qrcode/1692528
+// GetQrCode http://127.0.0.1:8001/qrcode/1692528
 func GetQrCode(ctx *fiber.Ctx) error {
 	uid := ctx.Params("uid")
 	url_str := ""
