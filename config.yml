@@ -3,6 +3,6 @@ application:
   port: 8001
   baseUrl: http://jobathome.cn/profile/%s
   logPath: /data/logs/web-qrcode/app.log
-  qrcodeSize: 256
+  qrcodeSize: 512
 
 

@@ -13,7 +13,7 @@ const (
 var (
 	BaseUrl    = ""
 	Logger     *zap.Logger
-	QrcodeSize = 128
+	QrcodeSize = 512
 )
 
 func Initialize() {
